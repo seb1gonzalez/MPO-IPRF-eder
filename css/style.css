@@ -1,0 +1,43 @@
+.btn
+{
+    border: 1px solid #000000;
+}
+
+.btn-primary
+{
+    background-color: #c0c0c0 !important;
+}
+
+#header
+{
+    background-color: #c0c0c0;
+}
+
+#agency
+{
+    padding-top: 25px; 
+}
+
+#title
+{
+    color: #ffffff;
+}
+
+#table
+{
+    padding-top: 25px;
+}
+
+#newProject
+{
+    padding-top: 25px;
+}
+
+@media only screen and (min-width: 800px)
+{
+    #title
+    {
+        padding-top: 20px;
+        right: 50px;
+    }
+}
