@@ -5,7 +5,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.css"> 
         <link rel="stylesheet" href="../css/style.css"/>
         <title>MPO Project Request Form</title>
     </head>
@@ -22,14 +24,12 @@
                     <h1>MPO Porject Request Form</h1>
                 </div>
                 <div id="user" class="col-md-2">
-                    <!-- TODO:  Create a layout for username and account type display-->
-                    <!-- user -->
-                    user
+                    <span class="glyphicon glyphicon-user"></span>
                 </div>
             </div>
         </div>
         <!-- Agency Name look up control -->
-        <div id="agency" class="container">
+        <!-- <div id="agency" class="container">
             <div class="row">
                 <div class="col-md-4">
                     <form class="form-inline">
@@ -39,30 +39,46 @@
                     </form> 
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- New Project button -->
-        <div id="newProject" class="container">
-            <button type="button" class="btn btn-primary">New Project Request</button>
-        </div>
+        <!-- <div id="newProject" class="container">
+            <button id="newProjectBtn" type="button" class="btn btn-primary">New Project Request</button>
+        </div> -->
         <!-- Table -->
-        <div id="table" class="container"> 
-            <table class="table table-hover">
+        <div id="table-div" class="container"> 
+            <div class="fixed-table-toolbar">
+                <div class = "bs-bars float-left">
+                    <div id="toolbar">
+                        <button id="newProjectBtn" type="button" class="btn btn-primary">New Project Request</button>
+                    </div>
+                </div>
+                <div class = "float-right search btn-group"> 
+                    <input class="form-control search-input" type="text" id="agencyName" class="form-control" placeholder="Agency Name">
+                </div>
+            </div>
+            
+            <table id="table" class="table table-hover">
                 <thead>
                   <tr>
-                    <th scope="col">Project Name</th>
-                    <th scope="col">Progress</th>
-                    <th scope="col">Date Submitted</th>
-                    <th scope="col">col1</th>
-                    <th scope="col">col2</th>
-                    <th scope="col">col3</th>
+                    <th scope="col" data-field="Project Name">Project Name</th>
+                    <th scope="col" data-field="Progress">Progress</th>
+                    <th scope="col" data-field="Date Submitted">Date Submitted</th>
+                    <th scope="col" data-field="col1">col1</th>
+                    <th scope="col" data-field="col2">col2</th>
+                    <th scope="col" data-field="col3">col3</th>
                   </tr>
                 </thead>
               </table>
         </div>
+    </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- Importing Bootstrap table js -->
+        <script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script>
+        <!-- Custom js to populate table, currently works with hard coded data -->
+        <script src="../js/agency.js"></script>
     </body>
 </html>

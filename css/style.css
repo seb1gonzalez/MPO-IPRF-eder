@@ -1,6 +1,6 @@
 .btn
 {
-    border: 1px solid #000000;
+    border: 1px solid #c0c0c0;
 }
 
 .btn-primary
@@ -23,7 +23,7 @@
     color: #ffffff;
 }
 
-#table
+#table-div
 {
     padding-top: 25px;
 }
@@ -33,11 +33,19 @@
     padding-top: 25px;
 }
 
-@media only screen and (min-width: 800px)
+@media only screen and (min-width: 1000px)
 {
     #title
     {
         padding-top: 20px;
         right: 50px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 999px)
+{
+    #title
+    {
+        left: 50px;
     }
 }
