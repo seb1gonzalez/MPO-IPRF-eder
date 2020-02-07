@@ -8,6 +8,18 @@
     background-color: #c0c0c0 !important;
 }
 
+.dropdown
+{
+    padding-top: 23px;
+}
+
+/* Text center align of li elements */
+.ul 
+{
+    text-align: center;
+    list-style: inside;
+}
+
 #header
 {
     background-color: #c0c0c0;
@@ -28,11 +40,6 @@
     padding-top: 25px;
 }
 
-#newProject
-{
-    padding-top: 25px;
-}
-
 @media only screen and (min-width: 1000px)
 {
     #title
@@ -48,4 +55,11 @@
     {
         left: 50px;
     }
+}
+
+#userProfile
+{
+    color: #ffffff;
+    background-color: #aaaaaa;
+    font-size: 18px;
 }
