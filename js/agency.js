@@ -5,7 +5,7 @@ var tbldata = [
         "Project Name": "Test 1", 
         "Progress": "Progress Test",
         "Date Submitted": "01/01/2020", 
-        "col1": "test", 
+        "created_by": "D", 
         "col2": "test", 
         "col3": "test"
     }, 
@@ -13,7 +13,7 @@ var tbldata = [
         "Project Name": "Test 1", 
         "Progress": "Progress Test",
         "Date Submitted": "01/01/2020", 
-        "col1": "test", 
+        "created_by": "C", 
         "col2": "test", 
         "col3": "test"
     }, 
@@ -21,7 +21,7 @@ var tbldata = [
         "Project Name": "Test 1", 
         "Progress": "Progress Test",
         "Date Submitted": "01/01/2020", 
-        "col1": "test", 
+        "created_by": "B", 
         "col2": "test", 
         "col3": "test"
     }, 
@@ -29,7 +29,7 @@ var tbldata = [
         "Project Name": "Test 1", 
         "Progress": "Progress Test",
         "Date Submitted": "01/01/2020", 
-        "col1": "test", 
+        "created_by": "A", 
         "col2": "test", 
         "col3": "test"
     } 
@@ -42,6 +42,10 @@ $(function () {
         data: tbldata
     });
 });
+
+// $(".clickable-row").click(function() {
+//     window.location = $(this).data("href");
+// });
 
 $('#newProjectBtn').on('click', function(event) {
     alert("Click"); 
