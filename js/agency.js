@@ -37,15 +37,15 @@ var tbldata = [
 
 // Populating bootstrap table with data. 
 // Data will probably be provided in the first HTTP GET response from server. 
-$(function () {
-    $('#table').bootstrapTable({
-        data: tbldata
-    });
+
+$('#table').bootstrapTable({
+    data: tbldata
 });
 
-// $(".clickable-row").click(function() {
-//     window.location = $(this).data("href");
-// });
+// JQuery to make each row of a dynamically loaded table clickable
+$(document).on('click', '#table tbody tr', function(e){
+    alert("Click")
+});
 
 $('#newProjectBtn').on('click', function(event) {
     alert("Click"); 
