@@ -9,5 +9,4 @@ $p_title = $_GET['project_title']; // key sent from front-end, from the object d
 $p_owner = $_GET['owner'];
 
 $query = "SELECT * FROM request_form WHERE project_title = $p_title AND created_by = $p_owner;"
-
 ?>
