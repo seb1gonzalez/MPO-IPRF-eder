@@ -42,7 +42,6 @@ $('#table').bootstrapTable({
     data: tbldata
 });
 
-
 // JQuery to make each row of a dynamically loaded table clickable
 // Probably this script should be inside the GET request, so that
 // we can attach a pdf url to each row
