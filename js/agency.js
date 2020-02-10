@@ -46,7 +46,7 @@ $('#table').bootstrapTable({
 // Probably this script should be inside the GET request, so that
 // we can attach a pdf url to each row
 $(document).on('click', '#table tbody tr', function(e){
-    alert("Click")
+    window.location = "../example.pdf";
 });
 
 $('#newProjectBtn').on('click', function(event) {
